@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Komaki X1 AR Experience</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Komaki X1 AR Experience">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- Desktop View -->
+    <div id="desktop-view">
+      <p>Scan this to experience Komaki X1 in your space</p>
+      <img src="qr_code_image.png" alt="QR Code" id="qr-code">
+    </div>
+
+    <!-- Mobile View -->
+    <div id="mobile-view">
+      <model-viewer id="ar-viewer" src="Komaki_X1_High_Poly_V17.glb" ar ar-modes="scene-viewer quick-look" camera-controls tone-mapping="neutral" style="display: none;">
+        <div class="progress-bar" slot="progress-bar">
+          <div class="update-bar"></div>
+        </div>
+      </model-viewer>
+    </div>
+    <!-- GIF Overlay -->
+    
+    <script src="script.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+  </body>
+</html>
